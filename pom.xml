@@ -11,11 +11,64 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+ 	<dependency>
+  		<groupId>org.apache.logging.log4j</groupId>
+  		<artifactId>log4j-api</artifactId>
+	</dependency>
+	<dependency>
+  		<groupId>org.apache.logging.log4j</groupId>
+  		<artifactId>log4j-core</artifactId>
+	</dependency>
+    <dependency>
+		<groupId>joda-time</groupId>
+		<artifactId>joda-time</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.wink</groupId>
+    	<artifactId>wink-server</artifactId>
+	</dependency>
+    <dependency>
+    	<groupId>org.apache.wink</groupId>
+    	<artifactId>wink-json-provider</artifactId>
+	</dependency>
   </dependencies>
   <build>
     <finalName>timeline-web</finalName>
   </build>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  			<version>4.11</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.logging.log4j</groupId>
+  			<artifactId>log4j-api</artifactId>
+  			<version>2.0-beta8</version>
+		</dependency>
+		<dependency>
+  			<groupId>org.apache.logging.log4j</groupId>
+  			<artifactId>log4j-core</artifactId>
+  			<version>2.0-beta8</version>
+		</dependency>
+    	<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.2</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>org.apache.wink</groupId>
+    		<artifactId>wink-server</artifactId>
+    		<version>1.3.0</version>
+		</dependency>
+    	<dependency>
+    		<groupId>org.apache.wink</groupId>
+    		<artifactId>wink-json-provider</artifactId>
+    		<version>1.3.0</version>
+		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>
